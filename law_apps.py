@@ -13,7 +13,7 @@ def download_template(exam_name,file_name):
     download_file = os.path.join("template/", exam_name + "/" + file_name)
     with open(download_file, 'rb') as f:
         st.download_button('Download File ' + file_name, f, file_name=file_name,mime="docx")  # Defaults to 'application/octet-stream'    #
-    st.text(download_file)
+    #st.text(download_file)
 
 if exam == "Civil law":
     civil_task = st.sidebar.radio('CIVIL LAW TASKS', ("Civil law task 1", "Civil law task 2", "Civil law task 3"))
